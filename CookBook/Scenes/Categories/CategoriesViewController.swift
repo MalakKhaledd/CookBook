@@ -62,8 +62,8 @@ extension CategoriesViewController: UITableViewDataSource {
         let category = categories?[indexPath.row]
         cell?.selectionStyle = .none
         cell?.configure(
-            imageURL: URL(string: category?.strCategoryThumb ?? ""),
-            title: category?.strCategory ?? ""
+            imageURL: URL(string: category?.thumbnail ?? ""),
+            title: category?.title ?? ""
         )
         return cell ?? UITableViewCell()
     }
