@@ -8,7 +8,22 @@
 import UIKit
 
 class RecipesViewController: UIViewController {
+    var viewModel: RecipesViewModel?
+    var category: String = ""
+
     override func viewDidLoad() {
         super.viewDidLoad()
+        configureViewModel()
+        loadRecipes()
+    }
+    
+    private func configureViewModel() {
+        viewModel = RecipesViewModel()
+    }
+    
+    private func loadRecipes() {
+        viewModel?.loadRecipes(for: category) { recipes, error in
+            print(recipes)
+        }
     }
 }

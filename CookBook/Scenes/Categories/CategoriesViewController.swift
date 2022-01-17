@@ -77,8 +77,10 @@ extension CategoriesViewController: UITableViewDelegate {
     }
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        let category = categories?[indexPath.row]
         let storyboard = UIStoryboard(name: "Recipes", bundle: nil)
         if let viewController = storyboard.instantiateViewController(withIdentifier: "RecipesViewController") as? RecipesViewController {
+            viewController.category = category?.title ?? ""
             navigationController?.pushViewController(viewController, animated: true)
         }
     }
