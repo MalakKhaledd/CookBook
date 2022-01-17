@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19455" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Y6W-OH-hqX">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19454"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Categories View Controller-->
+        <scene sceneID="s0d-6b-0kx">
+            <objects>
+                <viewController id="Y6W-OH-hqX" customClass="CategoriesViewController" customModule="CookBook" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="5EZ-qb-Rvc">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="cookBookLogo" translatesAutoresizingMaskIntoConstraints="NO" id="E2q-OJ-eNK">
+                                <rect key="frame" x="132" y="64" width="150" height="150"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="150" id="9tG-nW-m3T"/>
+                                    <constraint firstAttribute="width" constant="150" id="fW1-GZ-lGn"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Choose a category to start!" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bWo-k5-Ay8">
+                                <rect key="frame" x="85" y="164" width="244" height="24"/>
+                                <fontDescription key="fontDescription" name="TrebuchetMS" family="Trebuchet MS" pointSize="20"/>
+                                <color key="textColor" red="0.92533332109999999" green="0.38900959489999998" blue="0.36467218400000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="fHB-Ji-FNO">
+                                <rect key="frame" x="0.0" y="224" width="414" height="638"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                            </tableView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="vDu-zF-Fre"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="bWo-k5-Ay8" firstAttribute="top" secondItem="E2q-OJ-eNK" secondAttribute="bottom" constant="-50" id="157-u0-X7r"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="bottom" secondItem="fHB-Ji-FNO" secondAttribute="bottom" id="4K6-YF-hkX"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="fHB-Ji-FNO" secondAttribute="trailing" id="8D0-yG-rUD"/>
+                            <constraint firstItem="E2q-OJ-eNK" firstAttribute="centerX" secondItem="vDu-zF-Fre" secondAttribute="centerX" id="BAL-om-VGH"/>
+                            <constraint firstItem="E2q-OJ-eNK" firstAttribute="top" secondItem="vDu-zF-Fre" secondAttribute="top" constant="20" id="He1-4g-kDZ"/>
+                            <constraint firstItem="fHB-Ji-FNO" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" id="kXg-cR-1A2"/>
+                            <constraint firstItem="fHB-Ji-FNO" firstAttribute="top" secondItem="E2q-OJ-eNK" secondAttribute="bottom" constant="10" id="m7b-Wg-FGO"/>
+                            <constraint firstItem="bWo-k5-Ay8" firstAttribute="centerX" secondItem="E2q-OJ-eNK" secondAttribute="centerX" id="zkZ-lu-nFg"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="tableView" destination="fHB-Ji-FNO" id="Wgg-Wa-ETJ"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="34.782608695652179" y="97.767857142857139"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="cookBookLogo" width="500" height="500"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
