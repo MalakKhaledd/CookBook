@@ -60,7 +60,11 @@ extension CategoriesViewController: UITableViewDataSource {
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "ImageTitleTableViewCell") as? ImageTitleTableViewCell
         let category = categories?[indexPath.row]
-        cell?.configure(imageURL: URL(string: category?.strCategoryThumb ?? ""), title: category?.strCategory ?? "")
+        cell?.selectionStyle = .none
+        cell?.configure(
+            imageURL: URL(string: category?.strCategoryThumb ?? ""),
+            title: category?.strCategory ?? ""
+        )
         return cell ?? UITableViewCell()
     }
 }
