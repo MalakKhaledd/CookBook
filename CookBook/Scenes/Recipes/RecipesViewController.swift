@@ -1,5 +1,5 @@
 //
-//  CategoriesViewController.swift
+//  RecipesViewController.swift
 //  CookBook
 //
 //  Created by Malak Badawy on 17/01/2022.
@@ -7,32 +7,43 @@
 
 import UIKit
 
-class CategoriesViewController: UIViewController {
-    @IBOutlet weak var tableView: UITableView!
+class RecipesViewController: UIViewController {
+    // MARK: - IBOutlets
 
+    @IBOutlet weak var tableView: UITableView!
+    
+    // MARK: - Public Properties
+    
+    var category: String = ""
+    
     // MARK: - Private Properties
     
-    private var viewModel: CategoriesViewModel?
-    private var categories: [Category]?
-    
+    private var viewModel: RecipesViewModel?
+    private var recipes: [Recipe]?
+
     // MARK: - Lifecycle
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        setCategoryTitle()
         configureTableView()
         configureViewModel()
-        loadCategories()
+        loadRecipes()
     }
     
     // MARK: - Private Functions
     
     private func configureViewModel() {
-        viewModel = CategoriesViewModel()
+        viewModel = RecipesViewModel()
     }
     
-    private func loadCategories() {
-        viewModel?.loadCategories { [weak self] categories, error in
-            self?.categories = categories
+    private func setCategoryTitle() {
+        self.title = category
+    }
+
+    private func loadRecipes() {
+        viewModel?.loadRecipes(for: category) { [weak self] recipes, error in
+            self?.recipes = recipes
             self?.reloadTableView()
         }
     }
@@ -50,38 +61,25 @@ class CategoriesViewController: UIViewController {
     }
 }
 
-// MARK: - Table View Data Source
-
-extension CategoriesViewController: UITableViewDataSource {
+extension RecipesViewController: UITableViewDataSource {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return categories?.count ?? 0
+        return recipes?.count ?? 0
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "ImageTitleTableViewCell") as? ImageTitleTableViewCell
-        let category = categories?[indexPath.row]
+        let recipe = recipes?[indexPath.row]
         cell?.selectionStyle = .none
         cell?.configure(
-            imageURL: URL(string: category?.thumbnail ?? ""),
-            title: category?.title ?? ""
+            imageURL: URL(string: recipe?.thumbnail ?? ""),
+            title: recipe?.title ?? ""
         )
         return cell ?? UITableViewCell()
     }
 }
 
-// MARK: - Table View Delegate
-
-extension CategoriesViewController: UITableViewDelegate {
+extension RecipesViewController: UITableViewDelegate {
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
         return 70
-    }
-    
-    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        let category = categories?[indexPath.row]
-        let storyboard = UIStoryboard(name: "Recipes", bundle: nil)
-        if let viewController = storyboard.instantiateViewController(withIdentifier: "RecipesViewController") as? RecipesViewController {
-            viewController.category = category?.title ?? ""
-            navigationController?.pushViewController(viewController, animated: true)
-        }
     }
 }
