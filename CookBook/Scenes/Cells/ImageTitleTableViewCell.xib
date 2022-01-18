@@ -21,16 +21,16 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="70"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="ORa-aQ-Wio">
-                                <rect key="frame" x="20" y="0.0" width="80" height="70"/>
+                                <rect key="frame" x="5" y="0.0" width="80" height="70"/>
                             </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RCX-K3-TnT">
-                                <rect key="frame" x="120" y="25.5" width="39" height="19"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RCX-K3-TnT">
+                                <rect key="frame" x="95" y="25.5" width="39" height="19"/>
                                 <fontDescription key="fontDescription" name="TrebuchetMS" family="Trebuchet MS" pointSize="16"/>
                                 <color key="textColor" red="0.32941514249999998" green="0.32940736409999999" blue="0.32940888400000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" style="medium" translatesAutoresizingMaskIntoConstraints="NO" id="aa6-dn-fHz">
-                                <rect key="frame" x="50" y="25" width="20" height="20"/>
+                                <rect key="frame" x="35" y="25" width="20" height="20"/>
                             </activityIndicatorView>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -38,9 +38,9 @@
                             <constraint firstItem="aa6-dn-fHz" firstAttribute="centerY" secondItem="ORa-aQ-Wio" secondAttribute="centerY" id="2eu-t2-xNQ"/>
                             <constraint firstAttribute="bottom" secondItem="ORa-aQ-Wio" secondAttribute="bottom" id="7NX-TZ-te4"/>
                             <constraint firstItem="ORa-aQ-Wio" firstAttribute="width" secondItem="te1-zf-hy7" secondAttribute="width" multiplier="0.25" id="E4j-ML-0vi"/>
-                            <constraint firstItem="RCX-K3-TnT" firstAttribute="leading" secondItem="ORa-aQ-Wio" secondAttribute="trailing" constant="20" id="lW2-Tl-rAw"/>
+                            <constraint firstItem="RCX-K3-TnT" firstAttribute="leading" secondItem="ORa-aQ-Wio" secondAttribute="trailing" constant="10" id="lW2-Tl-rAw"/>
                             <constraint firstItem="aa6-dn-fHz" firstAttribute="centerX" secondItem="ORa-aQ-Wio" secondAttribute="centerX" id="o7h-7k-4dh"/>
-                            <constraint firstItem="ORa-aQ-Wio" firstAttribute="leading" secondItem="te1-zf-hy7" secondAttribute="leading" constant="20" id="sMk-nC-xcm"/>
+                            <constraint firstItem="ORa-aQ-Wio" firstAttribute="leading" secondItem="te1-zf-hy7" secondAttribute="leading" constant="5" id="sMk-nC-xcm"/>
                             <constraint firstItem="RCX-K3-TnT" firstAttribute="centerY" secondItem="ORa-aQ-Wio" secondAttribute="centerY" id="xhn-fV-GT7"/>
                             <constraint firstItem="ORa-aQ-Wio" firstAttribute="top" secondItem="te1-zf-hy7" secondAttribute="top" id="zd7-BU-vhS"/>
                         </constraints>
