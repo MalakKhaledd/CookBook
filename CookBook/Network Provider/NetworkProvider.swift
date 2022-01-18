@@ -37,6 +37,15 @@ class NetworkProvider {
         task.resume()
     }
     
+    func loadRecipeDetails(with id: String, completion: @escaping (Data?, URLResponse?, Error?) -> Void) {
+        guard let recipeDetailsURL = URL(string: buildURL(signature: "lookup") + "?i=\(id)") else { return }
+        
+        let task = session.dataTask(with: recipeDetailsURL) { data, response, error in
+            completion(data, response, error)
+        }
+        task.resume()
+    }
+    
     // MARK: - Private Functions
     
     private func buildURL(signature: String) -> String {
