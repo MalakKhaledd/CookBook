@@ -51,10 +51,6 @@ class RecipeDetailsViewModel {
         ingredients.append("\(recipe.measure18 ?? "") \(recipe.ingredient18 ?? "")")
         ingredients.append("\(recipe.measure19 ?? "") \(recipe.ingredient19 ?? "")")
         ingredients.append("\(recipe.measure20 ?? "") \(recipe.ingredient20 ?? "")")
-        return removeAnyEmptyIngredient(from: ingredients)
-    }
-    
-    private func removeAnyEmptyIngredient(from ingredients: [String]) -> [String] {
-        return ingredients.filter { !($0.isEmpty || $0 == " ") }
+        return ingredients
     }
 }

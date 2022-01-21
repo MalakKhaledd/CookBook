@@ -87,7 +87,7 @@ extension RecipesViewController: UITableViewDelegate {
         let selectedRecipe = recipes?[indexPath.row]
         let storyboard = UIStoryboard(name: "RecipeDetails", bundle: nil)
         if let viewController = storyboard.instantiateViewController(withIdentifier: "RecipeDetailsViewController") as? RecipeDetailsViewController {
-            viewController.recipeID = selectedRecipe?.id ?? ""
+            viewController.recipe = selectedRecipe
             navigationController?.pushViewController(viewController, animated: true)
         }
     }

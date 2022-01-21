@@ -16,23 +16,272 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="205-3I-W2g">
-                                <rect key="frame" x="0.0" y="44" width="414" height="170"/>
-                            </imageView>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="Krz-Ic-i5o">
+                                <rect key="frame" x="0.0" y="44" width="414" height="852"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <view key="tableFooterView" contentMode="scaleToFill" id="jys-Uv-aQq">
+                                    <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    <subviews>
+                                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="205-3I-W2g">
+                                            <rect key="frame" x="10" y="0.0" width="394" height="134.5"/>
+                                        </imageView>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Cuisine" textAlignment="natural" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VR2-Cs-ymI">
+                                            <rect key="frame" x="10" y="144.5" width="51.5" height="19"/>
+                                            <fontDescription key="fontDescription" name="TrebuchetMS" family="Trebuchet MS" pointSize="16"/>
+                                            <color key="textColor" red="0.32941514249999998" green="0.32940736409999999" blue="0.32940888400000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Instructions" textAlignment="natural" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="d3c-qZ-r64">
+                                            <rect key="frame" x="10" y="183.5" width="88.5" height="19"/>
+                                            <fontDescription key="fontDescription" name="TrebuchetMS-Bold" family="Trebuchet MS" pointSize="16"/>
+                                            <color key="textColor" red="0.32941514249999998" green="0.32940736409999999" blue="0.32940888400000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Tags" textAlignment="natural" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gCj-EO-gjL">
+                                            <rect key="frame" x="373.5" y="144.5" width="30.5" height="19"/>
+                                            <fontDescription key="fontDescription" name="TrebuchetMS" family="Trebuchet MS" pointSize="16"/>
+                                            <color key="textColor" red="0.32941514249999998" green="0.32940736409999999" blue="0.32940888400000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PFB-uR-WYZ">
+                                            <rect key="frame" x="10" y="212.5" width="394" height="276.5"/>
+                                            <mutableString key="text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc aliquet turpis ut sodales viverra. Vestibulum at vehicula augue, nec pulvinar leo. Maecenas in nulla tempor, pretium libero sed, sollicitudin quam. Nullam quis diam gravida nulla maximus tempus at id tellus. Aliquam erat volutpat. Integer id risus at mi ornare consectetur. Suspendisse convallis blandit odio, in tristique enim. In hac habitasse platea dictumst. Aliquam rhoncus interdum dolor, sed placerat tellus rhoncus accumsan.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc aliquet turpis ut sodales viverra. Vestibulum at vehicula augue, nec pulvinar leo. Maecenas in nulla tempor, pretium libero sed, sollicitudin quam. Nullam quis diam gravida nulla maximus tempus at id tellus. Aliquam erat volutpat. Integer id risus at mi ornare consectetur. Suspendisse convallis blandit odio, in tristique enim. In hac habitasse platea dictumst. Aliquam rhoncus interdum dolor, sed placerat tellus rhoncus accumsan.</mutableString>
+                                            <fontDescription key="fontDescription" name="TrebuchetMS" family="Trebuchet MS" pointSize="14"/>
+                                            <color key="textColor" red="0.32941514249999998" green="0.32940736409999999" blue="0.32940888400000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Ingredients" textAlignment="natural" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="t6V-sZ-gkb">
+                                            <rect key="frame" x="10" y="509" width="84" height="19"/>
+                                            <fontDescription key="fontDescription" name="TrebuchetMS-Bold" family="Trebuchet MS" pointSize="16"/>
+                                            <color key="textColor" red="0.32941514249999998" green="0.32940736409999999" blue="0.32940888400000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Ingredient1" textAlignment="natural" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LFd-B8-uOx">
+                                            <rect key="frame" x="10" y="538" width="72" height="16.5"/>
+                                            <fontDescription key="fontDescription" name="TrebuchetMS" family="Trebuchet MS" pointSize="14"/>
+                                            <color key="textColor" red="0.32941514249999998" green="0.32940736409999999" blue="0.32940888400000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Ingredient2" textAlignment="natural" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3Az-gP-ZT3">
+                                            <rect key="frame" x="10" y="564.5" width="72" height="16.5"/>
+                                            <fontDescription key="fontDescription" name="TrebuchetMS" family="Trebuchet MS" pointSize="14"/>
+                                            <color key="textColor" red="0.32941514249999998" green="0.32940736409999999" blue="0.32940888400000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Ingredient3" textAlignment="natural" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UQI-ED-45o">
+                                            <rect key="frame" x="10" y="591" width="72" height="16.5"/>
+                                            <fontDescription key="fontDescription" name="TrebuchetMS" family="Trebuchet MS" pointSize="14"/>
+                                            <color key="textColor" red="0.32941514249999998" green="0.32940736409999999" blue="0.32940888400000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Ingredient4" textAlignment="natural" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vRE-aO-jCs">
+                                            <rect key="frame" x="10" y="617.5" width="72" height="16.5"/>
+                                            <fontDescription key="fontDescription" name="TrebuchetMS" family="Trebuchet MS" pointSize="14"/>
+                                            <color key="textColor" red="0.32941514249999998" green="0.32940736409999999" blue="0.32940888400000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Ingredient5" textAlignment="natural" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hAa-rh-QOq">
+                                            <rect key="frame" x="10" y="644" width="72" height="16.5"/>
+                                            <fontDescription key="fontDescription" name="TrebuchetMS" family="Trebuchet MS" pointSize="14"/>
+                                            <color key="textColor" red="0.32941514249999998" green="0.32940736409999999" blue="0.32940888400000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Ingredient6" textAlignment="natural" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YWL-lo-MDB">
+                                            <rect key="frame" x="10" y="670.5" width="72" height="16.5"/>
+                                            <fontDescription key="fontDescription" name="TrebuchetMS" family="Trebuchet MS" pointSize="14"/>
+                                            <color key="textColor" red="0.32941514249999998" green="0.32940736409999999" blue="0.32940888400000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Ingredient7" textAlignment="natural" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6uq-VS-xyT">
+                                            <rect key="frame" x="10" y="697" width="72" height="16.5"/>
+                                            <fontDescription key="fontDescription" name="TrebuchetMS" family="Trebuchet MS" pointSize="14"/>
+                                            <color key="textColor" red="0.32941514249999998" green="0.32940736409999999" blue="0.32940888400000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Ingredient8" textAlignment="natural" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zH7-6H-uHw">
+                                            <rect key="frame" x="10" y="723.5" width="72" height="16.5"/>
+                                            <fontDescription key="fontDescription" name="TrebuchetMS" family="Trebuchet MS" pointSize="14"/>
+                                            <color key="textColor" red="0.32941514249999998" green="0.32940736409999999" blue="0.32940888400000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Ingredient9" textAlignment="natural" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hzb-Rb-3a4">
+                                            <rect key="frame" x="10" y="750" width="72" height="16.5"/>
+                                            <fontDescription key="fontDescription" name="TrebuchetMS" family="Trebuchet MS" pointSize="14"/>
+                                            <color key="textColor" red="0.32941514249999998" green="0.32940736409999999" blue="0.32940888400000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Ingredient10" textAlignment="natural" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="O0n-n2-xhx">
+                                            <rect key="frame" x="10" y="776.5" width="79" height="16.5"/>
+                                            <fontDescription key="fontDescription" name="TrebuchetMS" family="Trebuchet MS" pointSize="14"/>
+                                            <color key="textColor" red="0.32941514249999998" green="0.32940736409999999" blue="0.32940888400000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Ingredient11" textAlignment="natural" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xQY-pu-Fud">
+                                            <rect key="frame" x="182" y="538" width="79" height="16.5"/>
+                                            <fontDescription key="fontDescription" name="TrebuchetMS" family="Trebuchet MS" pointSize="14"/>
+                                            <color key="textColor" red="0.32941514249999998" green="0.32940736409999999" blue="0.32940888400000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Ingredient12" textAlignment="natural" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Qyo-w1-9bE">
+                                            <rect key="frame" x="182" y="564.5" width="79" height="16.5"/>
+                                            <fontDescription key="fontDescription" name="TrebuchetMS" family="Trebuchet MS" pointSize="14"/>
+                                            <color key="textColor" red="0.32941514249999998" green="0.32940736409999999" blue="0.32940888400000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Ingredient13" textAlignment="natural" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="c9g-kb-SLO">
+                                            <rect key="frame" x="182" y="591" width="79" height="16.5"/>
+                                            <fontDescription key="fontDescription" name="TrebuchetMS" family="Trebuchet MS" pointSize="14"/>
+                                            <color key="textColor" red="0.32941514249999998" green="0.32940736409999999" blue="0.32940888400000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Ingredient14" textAlignment="natural" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pcr-ew-ghc">
+                                            <rect key="frame" x="182" y="617.5" width="79" height="16.5"/>
+                                            <fontDescription key="fontDescription" name="TrebuchetMS" family="Trebuchet MS" pointSize="14"/>
+                                            <color key="textColor" red="0.32941514249999998" green="0.32940736409999999" blue="0.32940888400000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Ingredient15" textAlignment="natural" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Uft-H2-DNK">
+                                            <rect key="frame" x="182" y="644" width="79" height="16.5"/>
+                                            <fontDescription key="fontDescription" name="TrebuchetMS" family="Trebuchet MS" pointSize="14"/>
+                                            <color key="textColor" red="0.32941514249999998" green="0.32940736409999999" blue="0.32940888400000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Ingredient16" textAlignment="natural" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Tu6-tI-wWr">
+                                            <rect key="frame" x="182" y="670.5" width="79" height="16.5"/>
+                                            <fontDescription key="fontDescription" name="TrebuchetMS" family="Trebuchet MS" pointSize="14"/>
+                                            <color key="textColor" red="0.32941514249999998" green="0.32940736409999999" blue="0.32940888400000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Ingredient17" textAlignment="natural" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6kX-Mc-280">
+                                            <rect key="frame" x="182" y="697" width="79" height="16.5"/>
+                                            <fontDescription key="fontDescription" name="TrebuchetMS" family="Trebuchet MS" pointSize="14"/>
+                                            <color key="textColor" red="0.32941514249999998" green="0.32940736409999999" blue="0.32940888400000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Ingredient18" textAlignment="natural" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Qis-uR-btO">
+                                            <rect key="frame" x="182" y="723.5" width="79" height="16.5"/>
+                                            <fontDescription key="fontDescription" name="TrebuchetMS" family="Trebuchet MS" pointSize="14"/>
+                                            <color key="textColor" red="0.32941514249999998" green="0.32940736409999999" blue="0.32940888400000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Ingredient19" textAlignment="natural" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ppx-9S-OW5">
+                                            <rect key="frame" x="182" y="750" width="79" height="16.5"/>
+                                            <fontDescription key="fontDescription" name="TrebuchetMS" family="Trebuchet MS" pointSize="14"/>
+                                            <color key="textColor" red="0.32941514249999998" green="0.32940736409999999" blue="0.32940888400000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Ingredient20" textAlignment="natural" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FKK-MQ-cEP">
+                                            <rect key="frame" x="182" y="776.5" width="79" height="16.5"/>
+                                            <fontDescription key="fontDescription" name="TrebuchetMS" family="Trebuchet MS" pointSize="14"/>
+                                            <color key="textColor" red="0.32941514249999998" green="0.32940736409999999" blue="0.32940888400000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
+                                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                    <constraints>
+                                        <constraint firstItem="3Az-gP-ZT3" firstAttribute="top" secondItem="LFd-B8-uOx" secondAttribute="bottom" constant="10" id="1yi-dd-PjS"/>
+                                        <constraint firstItem="d3c-qZ-r64" firstAttribute="top" secondItem="VR2-Cs-ymI" secondAttribute="bottom" constant="20" id="2Ch-rW-e1q"/>
+                                        <constraint firstItem="t6V-sZ-gkb" firstAttribute="top" secondItem="PFB-uR-WYZ" secondAttribute="bottom" constant="20" id="4Az-jq-wkH"/>
+                                        <constraint firstItem="FKK-MQ-cEP" firstAttribute="bottom" secondItem="O0n-n2-xhx" secondAttribute="bottom" id="4JM-lR-rwK"/>
+                                        <constraint firstItem="pcr-ew-ghc" firstAttribute="leading" secondItem="c9g-kb-SLO" secondAttribute="leading" id="4ew-ug-19R"/>
+                                        <constraint firstItem="6kX-Mc-280" firstAttribute="top" secondItem="Tu6-tI-wWr" secondAttribute="bottom" constant="10" id="4pj-Mh-ZOW"/>
+                                        <constraint firstItem="zH7-6H-uHw" firstAttribute="leading" secondItem="6uq-VS-xyT" secondAttribute="leading" id="8YN-xo-VLN"/>
+                                        <constraint firstItem="hzb-Rb-3a4" firstAttribute="leading" secondItem="zH7-6H-uHw" secondAttribute="leading" id="8ye-r7-mLH"/>
+                                        <constraint firstItem="Qyo-w1-9bE" firstAttribute="top" secondItem="xQY-pu-Fud" secondAttribute="bottom" constant="10" id="9dm-N7-Mji"/>
+                                        <constraint firstItem="O0n-n2-xhx" firstAttribute="leading" secondItem="hzb-Rb-3a4" secondAttribute="leading" id="C9l-Fh-YJW"/>
+                                        <constraint firstItem="xQY-pu-Fud" firstAttribute="leading" secondItem="LFd-B8-uOx" secondAttribute="trailing" constant="100" id="EMf-ah-Aee"/>
+                                        <constraint firstItem="3Az-gP-ZT3" firstAttribute="leading" secondItem="LFd-B8-uOx" secondAttribute="leading" id="FGC-hZ-8M9"/>
+                                        <constraint firstItem="6uq-VS-xyT" firstAttribute="leading" secondItem="YWL-lo-MDB" secondAttribute="leading" id="Fbh-fE-FoI"/>
+                                        <constraint firstItem="c9g-kb-SLO" firstAttribute="top" secondItem="Qyo-w1-9bE" secondAttribute="bottom" constant="10" id="FrE-kB-qlL"/>
+                                        <constraint firstItem="PFB-uR-WYZ" firstAttribute="leading" secondItem="VR2-Cs-ymI" secondAttribute="leading" id="FvK-wL-GHl"/>
+                                        <constraint firstItem="PFB-uR-WYZ" firstAttribute="trailing" secondItem="gCj-EO-gjL" secondAttribute="trailing" id="HS2-gC-RG3"/>
+                                        <constraint firstItem="t6V-sZ-gkb" firstAttribute="leading" secondItem="PFB-uR-WYZ" secondAttribute="leading" id="Kkt-nR-LHJ"/>
+                                        <constraint firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="O0n-n2-xhx" secondAttribute="bottom" id="NE9-1v-dG1"/>
+                                        <constraint firstItem="O0n-n2-xhx" firstAttribute="top" secondItem="hzb-Rb-3a4" secondAttribute="bottom" constant="10" id="OBE-gc-tGz"/>
+                                        <constraint firstItem="6uq-VS-xyT" firstAttribute="top" secondItem="YWL-lo-MDB" secondAttribute="bottom" constant="10" id="P0h-5k-tcV"/>
+                                        <constraint firstItem="6kX-Mc-280" firstAttribute="leading" secondItem="Tu6-tI-wWr" secondAttribute="leading" id="PhQ-0v-U8m"/>
+                                        <constraint firstItem="gCj-EO-gjL" firstAttribute="trailing" secondItem="205-3I-W2g" secondAttribute="trailing" id="S2z-tl-CnJ"/>
+                                        <constraint firstItem="205-3I-W2g" firstAttribute="leading" secondItem="jys-Uv-aQq" secondAttribute="leading" constant="10" id="Tog-pd-YMH"/>
+                                        <constraint firstItem="d3c-qZ-r64" firstAttribute="leading" secondItem="VR2-Cs-ymI" secondAttribute="leading" id="Tz3-Kq-yGC"/>
+                                        <constraint firstItem="Uft-H2-DNK" firstAttribute="leading" secondItem="pcr-ew-ghc" secondAttribute="leading" id="XWF-4n-Q2m"/>
+                                        <constraint firstItem="VR2-Cs-ymI" firstAttribute="top" secondItem="205-3I-W2g" secondAttribute="bottom" constant="10" id="Zpa-O0-8zB"/>
+                                        <constraint firstItem="Tu6-tI-wWr" firstAttribute="top" secondItem="Uft-H2-DNK" secondAttribute="bottom" constant="10" id="azO-m0-DyP"/>
+                                        <constraint firstItem="Qis-uR-btO" firstAttribute="leading" secondItem="6kX-Mc-280" secondAttribute="leading" id="bFe-3X-BOa"/>
+                                        <constraint firstItem="hAa-rh-QOq" firstAttribute="top" secondItem="vRE-aO-jCs" secondAttribute="bottom" constant="10" id="cRH-Th-Gja"/>
+                                        <constraint firstItem="205-3I-W2g" firstAttribute="top" secondItem="jys-Uv-aQq" secondAttribute="top" id="d73-tH-3hL"/>
+                                        <constraint firstItem="zH7-6H-uHw" firstAttribute="top" secondItem="6uq-VS-xyT" secondAttribute="bottom" constant="10" id="dfi-U9-fh2"/>
+                                        <constraint firstItem="Ppx-9S-OW5" firstAttribute="top" secondItem="Qis-uR-btO" secondAttribute="bottom" constant="10" id="gfn-oE-FZ1"/>
+                                        <constraint firstItem="205-3I-W2g" firstAttribute="height" secondItem="jys-Uv-aQq" secondAttribute="height" multiplier="0.1" constant="50.199999999999996" id="gt5-Xt-ikF"/>
+                                        <constraint firstItem="Qis-uR-btO" firstAttribute="top" secondItem="6kX-Mc-280" secondAttribute="bottom" constant="10" id="guR-Lo-8cr"/>
+                                        <constraint firstItem="YWL-lo-MDB" firstAttribute="leading" secondItem="hAa-rh-QOq" secondAttribute="leading" id="gyP-EC-Ouy"/>
+                                        <constraint firstItem="c9g-kb-SLO" firstAttribute="leading" secondItem="Qyo-w1-9bE" secondAttribute="leading" id="ivO-wI-5mD"/>
+                                        <constraint firstItem="UQI-ED-45o" firstAttribute="leading" secondItem="3Az-gP-ZT3" secondAttribute="leading" id="kAH-Qo-7kh"/>
+                                        <constraint firstItem="FKK-MQ-cEP" firstAttribute="top" secondItem="Ppx-9S-OW5" secondAttribute="bottom" constant="10" id="ldX-Br-ACT"/>
+                                        <constraint firstItem="LFd-B8-uOx" firstAttribute="leading" secondItem="t6V-sZ-gkb" secondAttribute="leading" id="ley-8H-FQM"/>
+                                        <constraint firstItem="YWL-lo-MDB" firstAttribute="top" secondItem="hAa-rh-QOq" secondAttribute="bottom" constant="10" id="mRF-GN-GWo"/>
+                                        <constraint firstItem="Qyo-w1-9bE" firstAttribute="leading" secondItem="xQY-pu-Fud" secondAttribute="leading" id="mab-6u-hD2"/>
+                                        <constraint firstItem="hAa-rh-QOq" firstAttribute="leading" secondItem="vRE-aO-jCs" secondAttribute="leading" id="mw5-pz-grD"/>
+                                        <constraint firstItem="vRE-aO-jCs" firstAttribute="leading" secondItem="UQI-ED-45o" secondAttribute="leading" id="nTu-el-A6B"/>
+                                        <constraint firstItem="Tu6-tI-wWr" firstAttribute="leading" secondItem="Uft-H2-DNK" secondAttribute="leading" id="odc-B4-Zsx"/>
+                                        <constraint firstItem="PFB-uR-WYZ" firstAttribute="top" secondItem="d3c-qZ-r64" secondAttribute="bottom" constant="10" id="otN-oI-Hsy"/>
+                                        <constraint firstItem="gCj-EO-gjL" firstAttribute="firstBaseline" secondItem="VR2-Cs-ymI" secondAttribute="firstBaseline" id="pIg-gz-x3I"/>
+                                        <constraint firstItem="Uft-H2-DNK" firstAttribute="top" secondItem="pcr-ew-ghc" secondAttribute="bottom" constant="10" id="q3N-bD-di7"/>
+                                        <constraint firstItem="hzb-Rb-3a4" firstAttribute="top" secondItem="zH7-6H-uHw" secondAttribute="bottom" constant="10" id="qX2-yx-qwe"/>
+                                        <constraint firstItem="LFd-B8-uOx" firstAttribute="top" secondItem="t6V-sZ-gkb" secondAttribute="bottom" constant="10" id="rie-W7-KeP"/>
+                                        <constraint firstItem="Ppx-9S-OW5" firstAttribute="leading" secondItem="Qis-uR-btO" secondAttribute="leading" id="s8m-lb-kSg"/>
+                                        <constraint firstAttribute="trailing" secondItem="205-3I-W2g" secondAttribute="trailing" constant="10" id="sCf-YJ-Mz9"/>
+                                        <constraint firstItem="VR2-Cs-ymI" firstAttribute="leading" secondItem="205-3I-W2g" secondAttribute="leading" id="sT4-Ec-XEm"/>
+                                        <constraint firstItem="FKK-MQ-cEP" firstAttribute="leading" secondItem="Ppx-9S-OW5" secondAttribute="leading" id="vb9-XV-Y2h"/>
+                                        <constraint firstItem="pcr-ew-ghc" firstAttribute="top" secondItem="c9g-kb-SLO" secondAttribute="bottom" constant="10" id="wT9-4E-VUJ"/>
+                                        <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="xQY-pu-Fud" secondAttribute="trailing" constant="10" id="wU3-iW-MoP"/>
+                                        <constraint firstItem="UQI-ED-45o" firstAttribute="top" secondItem="3Az-gP-ZT3" secondAttribute="bottom" constant="10" id="wZ1-dF-xTO"/>
+                                        <constraint firstItem="xQY-pu-Fud" firstAttribute="top" secondItem="LFd-B8-uOx" secondAttribute="top" id="y4f-2p-AnI"/>
+                                        <constraint firstItem="vRE-aO-jCs" firstAttribute="top" secondItem="UQI-ED-45o" secondAttribute="bottom" constant="10" id="zrC-QK-dUQ"/>
+                                    </constraints>
+                                </view>
+                            </tableView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="vDu-zF-Fre"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
-                            <constraint firstItem="205-3I-W2g" firstAttribute="height" secondItem="5EZ-qb-Rvc" secondAttribute="height" multiplier="0.19" id="EH5-V6-c80"/>
-                            <constraint firstItem="205-3I-W2g" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" id="GPZ-xx-R0P"/>
-                            <constraint firstItem="205-3I-W2g" firstAttribute="top" secondItem="vDu-zF-Fre" secondAttribute="top" id="fX0-IA-1VG"/>
-                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="205-3I-W2g" secondAttribute="trailing" id="hwT-Ub-CZ2"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="Krz-Ic-i5o" secondAttribute="trailing" id="0iJ-75-sCJ"/>
+                            <constraint firstItem="Krz-Ic-i5o" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" id="Hse-ZX-uyQ"/>
+                            <constraint firstAttribute="bottom" secondItem="Krz-Ic-i5o" secondAttribute="bottom" id="awW-dg-WGW"/>
+                            <constraint firstItem="Krz-Ic-i5o" firstAttribute="top" secondItem="vDu-zF-Fre" secondAttribute="top" id="sdw-IO-eCp"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="cuisineLabel" destination="VR2-Cs-ymI" id="yxw-2r-5Qr"/>
+                        <outlet property="ingredientLabel1" destination="LFd-B8-uOx" id="Vgi-Kd-hJr"/>
+                        <outlet property="ingredientLabel10" destination="O0n-n2-xhx" id="O5V-es-QvU"/>
+                        <outlet property="ingredientLabel11" destination="xQY-pu-Fud" id="Xcj-2u-Cwa"/>
+                        <outlet property="ingredientLabel12" destination="Qyo-w1-9bE" id="Pvx-7H-PDB"/>
+                        <outlet property="ingredientLabel13" destination="c9g-kb-SLO" id="YXd-1n-wug"/>
+                        <outlet property="ingredientLabel14" destination="pcr-ew-ghc" id="PQ6-XR-aKE"/>
+                        <outlet property="ingredientLabel15" destination="Uft-H2-DNK" id="1U6-Cf-lCe"/>
+                        <outlet property="ingredientLabel16" destination="Tu6-tI-wWr" id="toI-Wn-HUS"/>
+                        <outlet property="ingredientLabel17" destination="6kX-Mc-280" id="fuR-Wm-eHK"/>
+                        <outlet property="ingredientLabel18" destination="Qis-uR-btO" id="EQA-FE-Nks"/>
+                        <outlet property="ingredientLabel19" destination="Ppx-9S-OW5" id="ZBS-In-mDh"/>
+                        <outlet property="ingredientLabel2" destination="3Az-gP-ZT3" id="WOE-Ga-8Tq"/>
+                        <outlet property="ingredientLabel20" destination="FKK-MQ-cEP" id="2gi-i8-naY"/>
+                        <outlet property="ingredientLabel3" destination="UQI-ED-45o" id="Ax9-wi-SjC"/>
+                        <outlet property="ingredientLabel4" destination="vRE-aO-jCs" id="aJZ-iI-uJ5"/>
+                        <outlet property="ingredientLabel5" destination="hAa-rh-QOq" id="o6N-uG-lgK"/>
+                        <outlet property="ingredientLabel6" destination="YWL-lo-MDB" id="hEO-Ga-4v3"/>
+                        <outlet property="ingredientLabel7" destination="6uq-VS-xyT" id="81K-Mb-1Xr"/>
+                        <outlet property="ingredientLabel8" destination="zH7-6H-uHw" id="ZVm-JF-5iD"/>
+                        <outlet property="ingredientLabel9" destination="hzb-Rb-3a4" id="55H-C4-ndC"/>
+                        <outlet property="instructionsLabel" destination="PFB-uR-WYZ" id="fCS-mJ-7iF"/>
+                        <outlet property="recipeImageView" destination="205-3I-W2g" id="4ff-PI-8Af"/>
+                        <outlet property="tableView" destination="Krz-Ic-i5o" id="Ers-Jt-lZs"/>
+                        <outlet property="tagesLabel" destination="gCj-EO-gjL" id="xNP-2K-rQ8"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="107" y="56"/>
+            <point key="canvasLocation" x="105.79710144927537" y="55.580357142857139"/>
         </scene>
     </scenes>
     <resources>
