@@ -82,4 +82,13 @@ extension RecipesViewController: UITableViewDelegate {
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
         return 70
     }
+    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        let selectedRecipe = recipes?[indexPath.row]
+        let storyboard = UIStoryboard(name: "RecipeDetails", bundle: nil)
+        if let viewController = storyboard.instantiateViewController(withIdentifier: "RecipeDetailsViewController") as? RecipeDetailsViewController {
+            viewController.recipe = selectedRecipe
+            navigationController?.pushViewController(viewController, animated: true)
+        }
+    }
 }
